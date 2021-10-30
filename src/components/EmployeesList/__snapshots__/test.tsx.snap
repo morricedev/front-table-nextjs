@@ -46,6 +46,10 @@ exports[`<EmployeesList /> should render table with not found message 1`] = `
   font-color: #1c1c1c;
 }
 
+.c1 td[colspan='5'] {
+  padding: 1.5rem;
+}
+
 .c1 td img {
   height: 3.5rem;
   width: 3.5rem;
@@ -146,6 +150,10 @@ exports[`<EmployeesList /> should render table with three employees 1`] = `
   padding: 0.5rem 1rem;
   font-weight: 400;
   font-color: #1c1c1c;
+}
+
+.c1 td[colspan='5'] {
+  padding: 1.5rem;
 }
 
 .c1 td img {

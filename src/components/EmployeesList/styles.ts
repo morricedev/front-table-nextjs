@@ -47,6 +47,10 @@ export const EmployeesTable = styled.table`
       font-weight: 400;
       font-color: ${theme.colors.black};
 
+      &[colspan='5'] {
+        padding: 1.5rem;
+      }
+
       & img {
         height: 3.5rem;
         width: 3.5rem;

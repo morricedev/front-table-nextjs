@@ -12,20 +12,16 @@ export function SearchContainer() {
     const inputValue = searchInput.current?.value.trim();
     if (!inputValue) return;
 
-    router.push({
+    router?.push({
       pathname: '/search/',
       query: { q: inputValue },
     });
   };
 
   const handleResetSearch = () => {
-    if (searchInput.current) {
-      searchInput.current.value = '';
-
-      router.push({
-        pathname: '/',
-      });
-    }
+    router?.push({
+      pathname: '/',
+    });
   };
 
   return (
@@ -35,12 +31,20 @@ export function SearchContainer() {
       <S.Search>
         <S.SearchInput ref={searchInput} type="text" placeholder="Pesquisar" />
 
-        <S.SearchButton onClick={handleSearch}>
+        <S.SearchButton
+          onClick={handleSearch}
+          aria-label="Pesquisar"
+          title="Pesquisar"
+        >
           <FaSearch />
         </S.SearchButton>
 
         {router?.query.q && (
-          <S.ResetSearchButton onClick={handleResetSearch}>
+          <S.ResetSearchButton
+            onClick={handleResetSearch}
+            aria-label="Redefinir pesquisa"
+            title="Redefinir pesquisa"
+          >
             <FaTimes />
           </S.ResetSearchButton>
         )}

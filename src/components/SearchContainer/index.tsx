@@ -39,7 +39,7 @@ export function SearchContainer() {
           <FaSearch />
         </S.SearchButton>
 
-        {router.query.q && (
+        {router?.query.q && (
           <S.ResetSearchButton onClick={handleResetSearch}>
             <FaTimes />
           </S.ResetSearchButton>

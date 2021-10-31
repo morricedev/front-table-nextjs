@@ -1,4 +1,4 @@
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 

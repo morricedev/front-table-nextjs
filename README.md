@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Front Table</h1>
 
-## Getting Started
+<p align="center">
+    <img alt="Front Table" src=".github/cover.png" />
+</p>
 
-First, run the development server:
+<br>
+
+## 🧪 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Next](https://nextjs.org/)
+- [Storybook](https://storybook.js.org/)
+- [Jest](https://jestjs.io/)
+- [Styled components](https://styled-components.com/)
+- [JSON Server](https://github.com/typicode/json-server)
+
+## ⚙️ Pré-requisitos
+Tenha instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/).
+
+## 🚀 Como executar
+
+Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/morricedev/front-table-nextjs.git
+$ cd front-table-nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para iniciá-lo, siga os passos abaixo:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Instalar as dependências
+$ yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Iniciar o json-server
+$ yarn server
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Iniciar o projeto
+$ yarn dev
+```
 
-## Learn More
+O app estará disponível no seu browser pelo endereço http://localhost:3000 e a api pelo endereço http://localhost:8080.
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Sobre o projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto é um site simples que lista as informações - que virão por uma API simulada escrita em json-server - dos funcionários de uma empresa e filtra-os através de um campo de pesquisa.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feito com 💜 by Morrice 👋🏻

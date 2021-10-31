@@ -3,6 +3,7 @@ import { screen, fireEvent } from '@testing-library/react';
 
 import { SearchContainer } from '.';
 import { renderTheme } from '../../styles/render-theme';
+import { theme } from '../../styles/theme';
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter');
 
@@ -14,6 +15,15 @@ describe('<SearchContainer />', () => {
       screen.getByRole('heading', { name: 'Funcionários' }),
     ).toBeInTheDocument();
     expect(screen.getByPlaceholderText('Pesquisar')).toBeInTheDocument();
+  });
+
+  it('should render with correct flex-direction when using mobile', () => {
+    const { container } = renderTheme(<SearchContainer />);
+    const searchContainer = container.querySelector('h1').parentElement;
+
+    expect(searchContainer).toHaveStyleRule('flex-direction', 'column', {
+      media: `only screen and ${theme.breakpoints.small}`,
+    });
   });
 
   it('should search on button click', () => {
